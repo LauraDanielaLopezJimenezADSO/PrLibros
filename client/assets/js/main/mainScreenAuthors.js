@@ -1,11 +1,11 @@
 import { agregarCerrarSesion } from '../../../modules/cerrarSesion.js';
 import { envia } from '../../../modules/ajax.js';
 
+
 document.addEventListener("DOMContentLoaded", async () => {
     const autoresLista = document.getElementById("autoresLista");
-
     // Cargar todos los autores al cargar la página
-    await cargarAutores();
+    cargarAutores();
 
     // Llamar a la función para agregar el evento de cierre de sesión
     agregarCerrarSesion('btnCerrarSesion');
@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     function mostrarResultados(autores) {
         // Limpiar resultados anteriores
-        autoresLista.innerHTML = "<h2 class='main-content__h2'>Autores</h2>"; // Mantener el encabezado
+        // autoresLista.innerHTML = "<h2 class='main-content__h2'>Autores</h2>"; // Mantener el encabezado
 
         if (autores.length === 0) {
             autoresLista.innerHTML += "<p>No hay autores disponibles.</p>";
