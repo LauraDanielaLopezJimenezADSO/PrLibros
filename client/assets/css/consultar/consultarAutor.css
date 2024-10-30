@@ -1,0 +1,68 @@
+@import url(../config.css);
+@import url(../asideCRUD.css);
+
+.main-content__search {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    margin: 40px 0px 40px 0px;
+    max-width: 80%;
+}
+
+.main-content__label {
+    margin-right: 10px;
+    font-size: var(--font-size);
+}
+
+.main-content__input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid var(--grisClaro);
+    border-radius: 5px;
+    height: var(--height);
+    font-size: var(--font-size);
+}
+
+.main-content__button {
+    background-color: var(--verde);
+    color: var(--blanco);
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    margin-left: 10px;
+    border-radius: var(--border-radius);
+    height: var(--height);
+    font-size: var(--font-size);
+}
+
+.main-content__button:hover {
+    background-color: var(--verdeOscuro);
+}
+
+/* Estilos para el resultado */
+.main-content__resultado {
+    margin-top: 20px;
+    max-width: 80%;
+}
+
+.resultado__tabla {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: var(--font-size);
+}
+
+.resultado__tabla th,
+.resultado__tabla td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.resultado__tabla th {
+    background-color: var(--azulOscuro);
+    color: var(--blanco);
+}
+
+.resultado__tabla tr:hover {
+    background-color: #f1f1f1;
+}

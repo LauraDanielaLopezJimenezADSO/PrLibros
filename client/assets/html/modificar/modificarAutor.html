@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modificar Autor</title>
+    <link rel="stylesheet" href="../../css/modificar/modificarAutor.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__title">Sistema de Gestión de Libros - Modificar Autor</h1>
+    </header>
+    
+    <div class="container">
+        <aside class="sidebar">
+            <h2 class="sidebar__subtitle">Autores</h2>
+            <nav class="sidebar__nav">
+                <button class="sidebar__button" id="btnAgregar" onclick="window.location.href='../../html/agregar/agregarAutor.html'">Agregar</button>
+                <button class="sidebar__button" id="btnConsultar">Consultar</button>
+                <button class="sidebar__button" id="btnModificar">Modificar</button>
+                <button class="sidebar__button" id="btnEliminar">Eliminar</button>
+            </nav>
+            <button class="sidebar__logout" id="btnCerrarSesion">Cerrar Sesión</button>
+        </aside>
+
+        <main class="main-content">
+            <div class="form">
+                <label class="form__label" for="selectAutor">Selecciona un autor:</label>
+                <select id="selectAutor" class="form__select">
+                    <option value="">Seleccione un autor</option>
+                </select>
+
+                <div id="autorDetails" class="form__details" style="display: none;">
+                    <h3 class="form__subtitle">Detalles del Autor</h3>
+                    <label class="form__label" for="nombreAutor">Nombre:</label>
+                    <input type="text" id="nombreAutor" class="form__input">
+
+                    <label class="form__label" for="apellidoAutor">Apellido:</label>
+                    <input type="text" id="apellidoAutor" class="form__input">
+
+                    <label class="form__label" for="estadoAutor">Estado:</label>
+                    <select id="estadoAutor" class="form__select">
+                        <option value="activo">Activo</option>
+                        <option value="inactivo">Inactivo</option>
+                    </select>
+
+                    <button class="form__btn" id="btnActualizar">Actualizar</button>
+                </div>
+            </div>
+
+            <div id="resultado" class="main__resultado"></div>
+        </main>
+    </div>
+
+    <script type="module" src="../../js/modificar/modificarAutor.js"></script>
+    <script type="module" src="../../js/main/mainScreenAuthors.js"></script>
+</body>
+</html>

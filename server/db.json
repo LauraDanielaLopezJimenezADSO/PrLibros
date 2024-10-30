@@ -1,0 +1,23 @@
+{
+  "usuarios": [
+    {
+      "id": "422b",
+      "correo": "la@gmail.com",
+      "password": "1234"
+    }
+  ],
+  "autores": [
+    {
+      "id": "m2vfjvo3wyu0dhelh",
+      "nombre": "William",
+      "apellido": "Shakespeare",
+      "estado": "activo"
+    },
+    {
+      "id": "m2vfjzwnckivhr0v4",
+      "nombre": "Leo",
+      "apellido": "Pardo",
+      "estado": "inactivo"
+    }
+  ]
+}

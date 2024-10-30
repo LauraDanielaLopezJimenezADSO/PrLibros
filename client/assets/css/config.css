@@ -1,0 +1,21 @@
+:root {
+    --vinoTinto: #671C34;
+    --verde: #39A900;
+    --blanco: white;
+    --azulOscuro: #001629;
+    --grisClaro: #ccc;
+    --negro: black;
+    --verdeOscuro: #216100;
+    --border-radius: 10px;
+    --height: 44px;
+    --font-size: 16px;
+    --rojo: red;
+    --font-weight: 600;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}

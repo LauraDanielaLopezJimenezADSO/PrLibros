@@ -1,0 +1,92 @@
+@import url(../config.css);
+
+body {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    background-color: var(--grisClaro); 
+}
+
+.form {
+    max-width: 500px; 
+    width: 100%; 
+    background-color: var(--blanco); 
+    color: var(--negro);
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    gap: 15px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+.form__title {
+    margin-bottom: 20px; 
+    text-align: center;
+}
+
+.form__label {
+    font-weight: bold;
+}
+
+.form__input {
+    padding: 10px;
+    border: 1px solid var(--azulOscuro);
+    outline: none;
+    border-radius: var(--border-radius);
+    width: 100%; 
+}
+
+.form__button {
+    
+    background-color: var(--verde); 
+    border: none;
+    border-radius: var(--border-radius);
+    color: var(--blanco); 
+    font-weight: var(--font-weight);
+    cursor: pointer;
+    transition: all 0.5s;
+    font-size: 20px;
+    height: var(--height); 
+}
+
+.form__button:hover {
+    color: var(--blanco);
+    background-color: var(--verdeOscuro);
+    box-shadow: 1px 1px 10px var(--blanco);
+}
+
+/* -----------------layouttt---------------- */
+
+.contenedor {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.mt-40 {
+    margin-top: 50px;
+}
+
+.mb-40 {
+    margin-bottom: 50px;
+}
+
+.layout {
+    display: grid;
+    grid-template-areas: "form table botones";
+    grid-template-columns: 500px 1fr;
+    gap: 1rem;
+}
+
+.formulario {
+    grid-area: form;
+}
+
+.table {
+    grid-area: table;
+}
+
+.botones {
+    grid-area: botones;
+}

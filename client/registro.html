@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="./assets/css/Login/stylesLogin.css">
+</head>
+<body>
+    <form id="registroForm" class="form form--registro" novalidate>
+        <h2 class="form__title">Registro del Administrador</h2>
+        <label class="form__label" for="correo">Correo:</label>
+        <input class="form__input" type="email" id="correo" required>
+
+        <label class="form__label" for="password">Contraseña:</label>
+        <input class="form__input" type="password" id="password" required>
+
+        <label class="form__label" for="passwordConfirm">Confirmar Contraseña:</label>
+        <input class="form__input" type="password" id="passwordConfirm" required>
+
+        <button class="form__button" type="button" id="registrarBtn">Registrar</button>
+    </form>
+    <script type="module" src="./modules/registro.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,42 @@
+@import url(../config.css);
+@import url(../asideCRUD.css);
+
+.form{
+    max-width: 80%;
+}
+.form__label {
+    display: block;
+    margin: 15px 0px 5px 0px;
+}
+
+.form__input,
+.form__select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+.form__details {
+    margin-top: 30px;
+}
+
+.form__btn {
+    margin-top: 40px;
+    background-color: var(--verde);
+    color: var(--blanco);
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: var(--border-radius);
+    height: var(--height);
+    font-size: var(--font-size);
+    width: 100%;
+}
+
+.form__btn:hover {
+    background-color: var(--verdeOscuro);
+}
+
+.main__resultado {
+    margin-top: 20px;
+}

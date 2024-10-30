@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./assets/css/Login/stylesLogin.css">
+</head>
+<body>
+    <form id="loginForm" class="form form--login" novalidate>
+        <h2 class="form__title">Login de Administrador</h2>
+        <label class="form__label" for="loginCorreo">Correo:</label>
+        <input class="form__input" type="email" id="loginCorreo" required>
+
+        <label class="form__label" for="loginPassword">Contraseña:</label>
+        <input class="form__input" type="password" id="loginPassword" required>
+
+        <button class="form__button" type="button" id="loginBtn">Iniciar Sesión</button>
+        <button class="form__button" type="button" onclick="window.location.href='registro.html'">Registrar</button>
+    </form>
+    <script type="module" src="./modules/login.js"></script>
+</body>
+</html>
+
