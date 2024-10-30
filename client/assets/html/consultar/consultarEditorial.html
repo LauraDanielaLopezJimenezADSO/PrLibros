@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Consultar Autor</title>
-    <link rel="stylesheet" href="../../css/consultar/consultarAutor.css">
+    <title>Consultar Editorial</title>
+    <link rel="stylesheet" href="../../css/consultar/consultarEditorial.css">
 </head>
 <body>
     <header class="header">
-        <h1 class="header__title">Sistema de Gestión de Libros - Consultar Autores</h1>
+        <h1 class="header__title">Sistema de Gestión de Libros - Consultar Editorial</h1>
         <!-- <button id="btnHome" class="header__button">HOME</button> -->
     </header>
     
     <div class="container">
         <aside class="sidebar">
-            <h2 class="sidebar__subtitle">Autores</h2>
+            <h2 class="sidebar__subtitle">Editorial</h2>
             <nav class="sidebar__nav">
                 <button class="sidebar__button" id="btnAgregar" >Agregar</button>
                 <button class="sidebar__button" id="btnConsultar">Consultar</button>
@@ -25,9 +25,9 @@
         </aside>
 
         <main class="main-content">
-            <div class="main-content__search">
-                <label for="buscarAutor" class="main-content__label">Buscar autor:</label>
-                <input type="text" id="buscarAutor" class="main-content__input" placeholder="Nombre o apellido" required>
+            <div class="main-content__search" novalidate>
+                <label for="buscarEditorial" class="main-content__label">Buscar Editorial:</label>
+                <input type="text" id="buscarEditorial" class="main-content__input" placeholder="Nombre de la editorial" required>
                 <button id="btnBuscar" class="main-content__button">Buscar</button>
                 <button id="btnLimpiar" class="main-content__button">Limpiar</button>
             </div>
@@ -37,7 +37,7 @@
         </main>
     </div>
 
-    <script type="module" src="../../js/consultar/consultarAutor.js"></script>
+    <script type="module" src="../../js/consultar/consultarEditorial.js"></script>
     <script type="module" src="../../js/main/mainScreenAuthors.js"></script>
 </body>
 </html>

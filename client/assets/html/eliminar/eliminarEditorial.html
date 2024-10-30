@@ -3,20 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eliminar Autor</title>
-    <link rel="stylesheet" href="../../css/eliminar/eliminarAutor.css">
+    <title>Eliminar Editorial</title>
+    <link rel="stylesheet" href="../../css/eliminar/eliminarEditorial.css">
 </head>
 <body>
     <header class="header">
-        <h1 class="header__title">Sistema de Gestión de Libros - Eliminar Autores</h1>
-        <!-- <button id="btnHome" class="header__button">HOME</button> -->
+        <h1 class="header__title">Sistema de Gestión de Libros - Eliminar Editorial</h1>
     </header>
     
     <div class="container">
         <aside class="sidebar">
-            <h2 class="sidebar__subtitle">Autores</h2>
+            <h2 class="sidebar__subtitle">Editoriales</h2>
             <nav class="sidebar__nav">
-                <button class="sidebar__button" id="btnAgregar" >Agregar</button>
+                <button class="sidebar__button" id="btnAgregar">Agregar</button>
                 <button class="sidebar__button" id="btnConsultar">Consultar</button>
                 <button class="sidebar__button" id="btnModificar">Modificar</button>
                 <button class="sidebar__button" id="btnEliminar">Eliminar</button>
@@ -26,22 +25,21 @@
 
         <main class="main-content">
             <div class="main-content__delete">
-                <label for="selectAutor" class="main-content__label">Seleccionar un autor:</label>
+                <label for="selectEditorial" class="main-content__label">Selecciona una editorial:</label>
                 <div class="main-content__div">
-                    <select id="selectAutor" class="main-content__select"> 
+                    <select id="selectEditorial" class="main-content__select"> 
                     </select>
-                    <button id="btnEliminarAutor" class="main-content__button">Eliminar</button>
+                    <button id="btneliminarEditorial" class="main-content__button">Eliminar</button> <!-- Cambié el id aquí -->
                 </div>
-                
             </div>
 
             <div id="resultadoInactivos" class="main-content__resultado">
-                <h2 class="main-content__h2">Autores Inactivos</h2>
+                <h2 class="main-content__h2">Editoriales Inactivas</h2>
             </div>
         </main>
     </div>
 
-    <script type="module" src="../../js/eliminar/eliminarAutor.js"></script>
-    <script type="module" src="../../js/main/mainScreenAuthors.js"></script>
+    <script type="module" src="../../js/eliminar/eliminarEditorial.js"></script>
+    <script type="module" src="../../js/main/mainScreenEditorials.js"></script>
 </body>
 </html>

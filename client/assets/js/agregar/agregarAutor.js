@@ -37,6 +37,24 @@ document.addEventListener("DOMContentLoaded", () => {
             return; // Detener el proceso si hay un error en la verificación
         }
 
+        // Verificar si existe una editorial con el mismo nombre
+        try {
+            const editoriales = await envia("editoriales"); // Obtiene todas las editoriales
+
+            const editorialExistente = editoriales.find(editorial =>
+                editorial.nombre.toLowerCase() === nombre.toLowerCase() // Comparar solo el nombre
+            );
+
+            if (editorialExistente) {
+                alert(`Ya existe una editorial con el nombre ${nombre}. No se puede agregar el autor.`);
+                return; // Detener el proceso si existe una editorial con el mismo nombre
+            }
+
+        } catch (error) {
+            alert("Error al verificar la existencia de la editorial.");
+            return; // Detener el proceso si hay un error en la verificación
+        }
+
         // Generamos un ID único
         const idAutor = Date.now().toString(36) + Math.random().toString(36).substr(2, 9);
 

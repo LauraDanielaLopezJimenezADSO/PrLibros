@@ -1,23 +1,54 @@
 {
   "usuarios": [
-    {
-      "id": "422b",
-      "correo": "la@gmail.com",
-      "password": "1234"
-    }
+    
   ],
   "autores": [
     {
       "id": "m2vfjvo3wyu0dhelh",
       "nombre": "William",
       "apellido": "Shakespeare",
-      "estado": "activo"
+      "estado": "inactivo"
     },
     {
       "id": "m2vfjzwnckivhr0v4",
       "nombre": "Leo",
       "apellido": "Pardo",
       "estado": "inactivo"
+    },
+    {
+      "id": "m2vx1xch3cc9vw3zx",
+      "nombre": "Gabriel",
+      "apellido": "García Marquez",
+      "estado": "activo"
+    },
+    {
+      "id": "m2vxb98w8oq6720ww",
+      "nombre": "Franz",
+      "apellido": "Kafka",
+      "estado": "activo"
+    }
+  ],
+  "editoriales": [
+    {
+      "id": "1f2f",
+      "nombre": "Ediciones NORMA",
+      "correo": "ediciones@norma.com",
+      "telefono": "3227768976",
+      "estado": "inactivo"
+    },
+    {
+      "id": "3e6a",
+      "nombre": "Santillana",
+      "telefono": "3227750188",
+      "correo": "santillana@gmail.com",
+      "estado": "activo"
+    },
+    {
+      "id": "4a08",
+      "nombre": "Milky",
+      "correo": "milky@gmail.com",
+      "telefono": "322789865",
+      "estado": "activo"
     }
   ]
 }

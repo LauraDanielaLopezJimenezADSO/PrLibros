@@ -1,0 +1,42 @@
+@import url(../config.css);
+@import url(../asideCRUD.css);
+@import url(../../css/consultar/consultarAutor.css);
+
+.main-content__delete{
+    max-width: 80%;
+}
+
+.main-content__label{
+    display: block;
+    margin: 15px 0px 5px 0px;
+}
+
+.main-content__div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.main-content__select{
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    height: var(--height);
+}
+
+.main-content__button{
+    background-color: var(--azulOscuro);
+    color: var(--blanco);
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: var(--border-radius);
+    height: var(--height);
+    font-size: var(--font-size);
+}
+
+.main-content__h2{
+    margin: 30px 0px 10px 0px;
+}
+

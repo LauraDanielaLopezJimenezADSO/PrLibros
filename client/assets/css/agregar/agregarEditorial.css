@@ -1,0 +1,62 @@
+@import url(../config.css);
+@import url(../asideCRUD.css);
+
+
+.form-editorial {
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+    gap: 10px;
+    margin: 0 auto;
+    justify-content: center;
+    height: 80vh;
+}
+
+.form-editorial__label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-editorial__input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid var(--grisClaro);
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+    height: var(--height);
+}
+
+.form-editorial__input:focus {
+    border-color: var(--verde);
+    outline: none;
+}
+
+.form-editorial__submit {
+    margin-top: 15px;
+    padding: 8px;
+    background-color: var(--verde);
+    color: var(--blanco);
+    border: none;
+    border-radius: var(--border-radius);
+    transition: all 0.5s;
+    font-weight: var(--font-weight);
+    cursor: pointer;
+    transition: background-color 0.3s;
+    height: var(--height);
+    font-size: var(--font-size);
+}
+
+.form-editorial__submit:hover {
+    background-color: var(--verdeOscuro);
+}
+
+.form-editorial__mensaje {
+    margin-top: 15px;
+    font-size: 14px;
+    color: red;
+    text-align: center;
+}

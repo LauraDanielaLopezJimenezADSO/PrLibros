@@ -9,7 +9,7 @@
     margin: 0 auto;
     justify-content: center;
     height: 80vh;
-
+    max-width: 80%;
 }
 
 .form-autor__label {

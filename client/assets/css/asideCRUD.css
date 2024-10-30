@@ -10,10 +10,25 @@ body {
     color: var(--vinoTinto);
     padding: 30px;
     text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
 }
 
 .header__title{
     font-size: 28px;
+}
+
+.header__button{
+    background-color: var(--azulOscuro);
+    color: var(--blanco);
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: var(--border-radius);
+    height: var(--height);
+    font-size: var(--font-size);
 }
 
 .container {

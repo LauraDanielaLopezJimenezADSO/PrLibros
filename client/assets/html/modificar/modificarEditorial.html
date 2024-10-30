@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modificar Editorial</title>
+    <link rel="stylesheet" href="../../css/modificar/modificarEditorial.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__title">Sistema de Gestión de Libros - Modificar Editorial</h1>
+    </header>
+    
+    <div class="container">
+        <aside class="sidebar">
+            <h2 class="sidebar__subtitle">Editoriales</h2>
+            <nav class="sidebar__nav">
+                <button class="sidebar__button" id="btnAgregar" onclick="window.location.href='../../html/agregar/agregarAutor.html'">Agregar</button>
+                <button class="sidebar__button" id="btnConsultar">Consultar</button>
+                <button class="sidebar__button" id="btnModificar">Modificar</button>
+                <button class="sidebar__button" id="btnEliminar">Eliminar</button>
+            </nav>
+            <button class="sidebar__logout" id="btnCerrarSesion">Cerrar Sesión</button>
+        </aside>
+
+        <main class="main-content">
+            <div class="form">
+                <label class="form__label" for="selectEdit">Selecciona una editorial:</label>
+                <select id="selectEdit" class="form__select">
+                    <option value="">Seleccione una editorial...</option>
+                </select>
+
+                <div id="editorialDetails" class="form__details" style="display: none;">
+                    <h3 class="form__subtitle">Detalles de la Editorial</h3>
+                    <label class="form__label" for="nombreditorial">Nombre:</label>
+                    <input type="text" id="nombreditorial" class="form__input">
+                
+                    <label class="form__label" for="correoEditorial">Correo:</label>
+                    <input type="email" id="correoEditorial" class="form__input">
+                
+                    <label class="form__label" for="telefonoEditorial">Teléfono:</label>
+                    <input type="text" id="telefonoEditorial" class="form__input">
+                
+                    <label class="form__label" for="estadoEditorial">Estado:</label>
+                    <select id="estadoEditorial" class="form__select">
+                        <option value="activo">Activo</option>
+                        <option value="inactivo">Inactivo</option>
+                    </select>
+                
+                    <button class="form__btn" id="btnActualizar">Actualizar</button>
+                </div>
+            </div>
+
+            <div id="resultado" class="main__resultado"></div>
+        </main>
+    </div>
+
+    <script type="module" src="../../js/modificar/modificarEditorial.js"></script>
+    <script type="module" src="../../js/main/mainScreenEditorials.js"></script>
+</body>
+</html>
